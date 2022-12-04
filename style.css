@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+ nav {
+    background-color: rgb(147, 147, 165);
+    box-shadow:  2px 2px 2px 2px #000;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 4rem;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+main h1, h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.songs{
+    display: flex;
+}
+.songs p{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.songs p a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    transform: background-color;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        border: none;
+        color: black;
+        background-color: white;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.circle1{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5rem dashed #000;
+    background-color: #fff;
+    animation-name: round1;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.circle2{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5rem dashed #000;
+    background-color: #fff;
+    animation-name: round2;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes round1 {
+    0%{
+        transform: rotate();
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes round2 {
+    0%{
+        transform: rotate();
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (min-width: 375px){
+    nav {
+        background-color: rgb(147, 147, 165);
+        box-shadow:  2px 2px 2px 2px #000;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: aliceblue;
+        margin-left: 2rem;
+        font-weight: 900;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .songs{
+        display: flex;
+    }
+    .songs p{
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-weight: 900;
+        font-size: 1rem;
+    }
+    .songs p a{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border: 2px solid black;
+        border-radius: 0.5rem;
+    }
+    .circle1{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 0.5rem dashed #000;
+        background-color: #fff;
+        animation-name: round1;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    .circle2{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 0.5rem dashed #000;
+        background-color: #fff;
+        animation-name: round2;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes round1 {
+        0%{
+            transform: rotate();
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    @keyframes round2 {
+        0%{
+            transform: rotate();
+        }
+        50%{
+            transform: rotate(-360deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }  
+
+}
+@media screen and (min-width: 768px){
+    .songs{
+        display: flex;
+    }
+    .songs p{
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    .songs p a{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border: 2px solid black;
+        border-radius: 0.5rem;
+    }
+    .circle1{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0.5rem dashed #000;
+        background-color: #fff;
+        animation-name: round1;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    .circle2{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0.5rem dashed #000;
+        background-color: #fff;
+        animation-name: round2;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes round1 {
+        0%{
+            transform: rotate();
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    @keyframes round2 {
+        0%{
+            transform: rotate();
+        }
+        50%{
+            transform: rotate(-360deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }  
+}
+@media screen and (min-width: 1024px){
+    nav {
+        background-color: rgb(147, 147, 165);
+        box-shadow:  2px 2px 2px 2px #000;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: aliceblue;
+        margin-left: 4rem;
+        font-weight: 900;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    main h1, h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    .songs{
+        display: flex;
+    }
+    .songs p{
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    .songs p a{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border: 2px solid black;
+        border-radius: 0.5rem;
+    }
+    .circle1{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0.5rem dashed #000;
+        background-color: #fff;
+        animation-name: round1;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    .circle2{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0.5rem dashed #000;
+        background-color: #fff;
+        animation-name: round2;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes round1 {
+        0%{
+            transform: rotate();
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    @keyframes round2 {
+        0%{
+            transform: rotate();
+        }
+        50%{
+            transform: rotate(-360deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }  
+}
